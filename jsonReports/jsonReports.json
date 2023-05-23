@@ -1,0 +1,116 @@
+{
+  "config": {
+    "configFile": "c:\\Users\\asus\\OneDrive\\Рабочий стол\\New folder (3)\\playwright.config.js",
+    "rootDir": "c:/Users/asus/OneDrive/Рабочий стол/New folder (3)",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {},
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "json",
+        {
+          "outputFile": "jsonReports/jsonReports.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "c:/Users/asus/OneDrive/Рабочий стол/New folder (3)/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "c:/Users/asus/OneDrive/Рабочий стол/New folder (3)",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.33.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "tests\\login.test.js",
+      "file": "tests/login.test.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Verify user can sign in with Facebook",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "failed",
+                  "duration": 22676,
+                  "error": {
+                    "message": "page.waitForURL: Navigation failed because page was closed!\n=========================== logs ===========================\nwaiting for navigation to \"https://menu.am/en\" until \"load\"\n============================================================",
+                    "stack": "Error: page.waitForURL: Navigation failed because page was closed!\n=========================== logs ===========================\nwaiting for navigation to \"https://menu.am/en\" until \"load\"\n============================================================\n    at c:\\Users\\asus\\OneDrive\\Рабочий стол\\New folder (c:\\Users\\asus\\OneDrive\\Рабочий стол\\New folder (3)\\3)\\tests\\login.test.js:95:20)\n    at c:\\Users\\asus\\OneDrive\\Рабочий стол\\New folder (c:\\Users\\asus\\OneDrive\\Рабочий стол\\New folder (3)\\3)\\node_modules\\@playwright\\test\\lib\\worker\\workerMain.js:351:9)\n    at c:\\Users\\asus\\OneDrive\\Рабочий стол\\New folder (c:\\Users\\asus\\OneDrive\\Рабочий стол\\New folder (3)\\3)\\node_modules\\@playwright\\test\\lib\\worker\\workerMain.js:347:7)"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "c:\\Users\\asus\\OneDrive\\Рабочий стол\\New folder (3)\\3)\\tests\\login.test.js",
+                        "column": 20,
+                        "line": 95
+                      },
+                      "message": "Error: page.waitForURL: Navigation failed because page was closed!\n=========================== logs ===========================\nwaiting for navigation to \"https://menu.am/en\" until \"load\"\n============================================================\n\n\u001b[2m    at c:\\Users\\asus\\OneDrive\\Рабочий стол\\New folder (c:\\Users\\asus\\OneDrive\\Рабочий стол\\New folder (3)\\3)\\tests\\login.test.js:95:20)\u001b[22m\n\u001b[2m    at c:\\Users\\asus\\OneDrive\\Рабочий стол\\New folder (c:\\Users\\asus\\OneDrive\\Рабочий стол\\New folder (3)\\3)\\node_modules\\@playwright\\test\\lib\\worker\\workerMain.js:351:9)\u001b[22m\n\u001b[2m    at c:\\Users\\asus\\OneDrive\\Рабочий стол\\New folder (c:\\Users\\asus\\OneDrive\\Рабочий стол\\New folder (3)\\3)\\node_modules\\@playwright\\test\\lib\\worker\\workerMain.js:347:7)\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-05-23T17:27:51.163Z",
+                  "attachments": [],
+                  "errorLocation": {
+                    "file": "c:\\Users\\asus\\OneDrive\\Рабочий стол\\New folder (3)\\3)\\tests\\login.test.js",
+                    "column": 20,
+                    "line": 95
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "94416ff326c6cac9157c-cbfaaff130b090006760",
+          "file": "tests/login.test.js",
+          "line": 73,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": []
+}
