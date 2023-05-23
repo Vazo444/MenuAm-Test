@@ -18,13 +18,13 @@ module.exports = defineConfig({
   //   screenshot: "on",
   // },
   projects: [
-    // {
-    //   name: 'firefox',
-    //   use: { 
-    //     ...devices['Desktop Firefox'], 
-    //     headless: false
-    //   },
-    // },
+    {
+      name: 'firefox',
+      use: { 
+        ...devices['Desktop Firefox'], 
+        // headless: false
+      },
+    },
     {
       name: 'chromium',
       use: {
