@@ -8,11 +8,7 @@ pipeline {
             }
         }
         
-        stage('Install dependencies') {
-            steps {
-                sh 'npm i'
-            }
-        }
+        
         
         stage('Run Playwright tests') {
             steps {
