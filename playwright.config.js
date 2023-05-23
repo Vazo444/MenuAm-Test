@@ -18,21 +18,21 @@ module.exports = defineConfig({
   //   screenshot: "on",
   // },
   projects: [
-    {
-      name: 'firefox',
-      use: { 
-        ...devices['Desktop Firefox'], 
-        headless: false
-      },
-    },
     // {
-    //   name: 'chromium',
-    //   use: {
-    //     ...devices['Desktop Chrome'],
-    //     headless: false,
-    //     channel: 'chrome',
-    //   }
-    // }
+    //   name: 'firefox',
+    //   use: { 
+    //     ...devices['Desktop Firefox'], 
+    //     headless: false
+    //   },
+    // },
+    {
+      name: 'chromium',
+      use: {
+        ...devices['Desktop Chrome'],
+        // headless: false,
+        channel: 'chrome',
+      }
+    }
   ],
   reporter: [ 
     ["json", {
