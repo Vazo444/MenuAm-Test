@@ -44,6 +44,19 @@
           "**/*.@(spec|test).?(m)[jt]s?(x)"
         ],
         "timeout": 30000
+      },
+      {
+        "outputDir": "c:/Users/asus/OneDrive/Рабочий стол/New folder (3)/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "c:/Users/asus/OneDrive/Рабочий стол/New folder (3)",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(m)[jt]s?(x)"
+        ],
+        "timeout": 30000
       }
     ],
     "shard": null,
@@ -54,13 +67,13 @@
   },
   "suites": [
     {
-      "title": "tests\\login.test.js",
-      "file": "tests/login.test.js",
+      "title": "tests\\resetPassword.test.js",
+      "file": "tests/resetPassword.test.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Verify user can sign in with Facebook",
+          "title": "Verify user can reset password via phon number",
           "ok": false,
           "tags": [],
           "tests": [
@@ -68,45 +81,45 @@
               "timeout": 30000,
               "annotations": [],
               "expectedStatus": "passed",
-              "projectId": "firefox",
-              "projectName": "firefox",
+              "projectId": "chromium",
+              "projectName": "chromium",
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "failed",
-                  "duration": 22676,
+                  "status": "timedOut",
+                  "duration": 30009,
                   "error": {
-                    "message": "page.waitForURL: Navigation failed because page was closed!\n=========================== logs ===========================\nwaiting for navigation to \"https://menu.am/en\" until \"load\"\n============================================================",
-                    "stack": "Error: page.waitForURL: Navigation failed because page was closed!\n=========================== logs ===========================\nwaiting for navigation to \"https://menu.am/en\" until \"load\"\n============================================================\n    at c:\\Users\\asus\\OneDrive\\Рабочий стол\\New folder (c:\\Users\\asus\\OneDrive\\Рабочий стол\\New folder (3)\\3)\\tests\\login.test.js:95:20)\n    at c:\\Users\\asus\\OneDrive\\Рабочий стол\\New folder (c:\\Users\\asus\\OneDrive\\Рабочий стол\\New folder (3)\\3)\\node_modules\\@playwright\\test\\lib\\worker\\workerMain.js:351:9)\n    at c:\\Users\\asus\\OneDrive\\Рабочий стол\\New folder (c:\\Users\\asus\\OneDrive\\Рабочий стол\\New folder (3)\\3)\\node_modules\\@playwright\\test\\lib\\worker\\workerMain.js:347:7)"
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
                   },
                   "errors": [
                     {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
                       "location": {
-                        "file": "c:\\Users\\asus\\OneDrive\\Рабочий стол\\New folder (3)\\3)\\tests\\login.test.js",
-                        "column": 20,
-                        "line": 95
+                        "file": "c:\\Users\\asus\\OneDrive\\Рабочий стол\\New folder (3)\\3)\\tests\\resetPassword.test.js",
+                        "column": 10,
+                        "line": 41
                       },
-                      "message": "Error: page.waitForURL: Navigation failed because page was closed!\n=========================== logs ===========================\nwaiting for navigation to \"https://menu.am/en\" until \"load\"\n============================================================\n\n\u001b[2m    at c:\\Users\\asus\\OneDrive\\Рабочий стол\\New folder (c:\\Users\\asus\\OneDrive\\Рабочий стол\\New folder (3)\\3)\\tests\\login.test.js:95:20)\u001b[22m\n\u001b[2m    at c:\\Users\\asus\\OneDrive\\Рабочий стол\\New folder (c:\\Users\\asus\\OneDrive\\Рабочий стол\\New folder (3)\\3)\\node_modules\\@playwright\\test\\lib\\worker\\workerMain.js:351:9)\u001b[22m\n\u001b[2m    at c:\\Users\\asus\\OneDrive\\Рабочий стол\\New folder (c:\\Users\\asus\\OneDrive\\Рабочий стол\\New folder (3)\\3)\\node_modules\\@playwright\\test\\lib\\worker\\workerMain.js:347:7)\u001b[22m"
+                      "message": "Error: page.fill: Target closed\n=========================== logs ===========================\nwaiting for locator('xpath=//input[@data-id=\\'0\\']')\n============================================================\n\n\u001b[2m    at c:\\Users\\asus\\OneDrive\\Рабочий стол\\New folder (c:\\Users\\asus\\OneDrive\\Рабочий стол\\New folder (3)\\3)\\tests\\resetPassword.test.js:41:10)\u001b[22m\n\u001b[2m    at c:\\Users\\asus\\OneDrive\\Рабочий стол\\New folder (c:\\Users\\asus\\OneDrive\\Рабочий стол\\New folder (3)\\3)\\node_modules\\@playwright\\test\\lib\\worker\\workerMain.js:351:9)\u001b[22m\n\u001b[2m    at c:\\Users\\asus\\OneDrive\\Рабочий стол\\New folder (c:\\Users\\asus\\OneDrive\\Рабочий стол\\New folder (3)\\3)\\node_modules\\@playwright\\test\\lib\\worker\\workerMain.js:347:7)\u001b[22m"
+                    },
+                    {
+                      "message": "Pending operations:\n  - page.fill at 3)\\tests\\resetPassword.test.js:41:10\n  - page.click at pages\\pom.page.js:117:21\n"
                     }
                   ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-05-23T17:27:51.163Z",
-                  "attachments": [],
-                  "errorLocation": {
-                    "file": "c:\\Users\\asus\\OneDrive\\Рабочий стол\\New folder (3)\\3)\\tests\\login.test.js",
-                    "column": 20,
-                    "line": 95
-                  }
+                  "startTime": "2023-05-24T17:48:39.509Z",
+                  "attachments": []
                 }
               ],
               "status": "unexpected"
             }
           ],
-          "id": "94416ff326c6cac9157c-cbfaaff130b090006760",
-          "file": "tests/login.test.js",
-          "line": 73,
+          "id": "e791e482de1a5095b49b-db120778ec902d2922ac",
+          "file": "tests/resetPassword.test.js",
+          "line": 25,
           "column": 5
         }
       ]
