@@ -1,7 +1,15 @@
 import { expect, test } from "@playwright/test";
 import { pom } from "../pages/pom.page"
 
+const { updateTestRunStatus } = require('./../testrail');
+
+
 test("Verify the user can sign in via Phone number.", async ({ page }) => {
+    // const testRunName = 'Automated Test Run';
+    // const testRunDescription = 'Automated test run description';
+    // const testCaseIds = [38, 39, 40]; // Replace with the actual TestRail test case IDs
+    // await createTestRun(testRunName, testRunDescription, testCaseIds);
+
     const pageom = new pom(page)
     await pageom.goToHomePage()
     await pageom.signInButtonH()
@@ -16,6 +24,9 @@ test("Verify the user can sign in via Phone number.", async ({ page }) => {
     await pageom.accountSettings()
     const number = page.locator("(//span[text()='Phone Number']/following::input)[1]")
     await expect(number).toHaveValue("+1" + pageom.logNumberAM)
+
+        const testStatus = 'passed'; // Replace with the appropriate test status
+        updateTestRunStatus(3, testStatus);
 })
 // +12183924371
 // https://receive-smss.live/messages?n=12183924371

@@ -67,14 +67,14 @@
   },
   "suites": [
     {
-      "title": "tests\\resetPassword.test.js",
-      "file": "tests/resetPassword.test.js",
+      "title": "tests\\login.test.js",
+      "file": "tests/login.test.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Verify user can reset password via phon number",
-          "ok": false,
+          "title": "Verify the user can sign in via Phone number.",
+          "ok": true,
           "tags": [],
           "tests": [
             {
@@ -86,40 +86,22 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "timedOut",
-                  "duration": 30009,
-                  "error": {
-                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                  },
-                  "errors": [
-                    {
-                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                    },
-                    {
-                      "location": {
-                        "file": "c:\\Users\\asus\\OneDrive\\Рабочий стол\\New folder (3)\\3)\\tests\\resetPassword.test.js",
-                        "column": 10,
-                        "line": 41
-                      },
-                      "message": "Error: page.fill: Target closed\n=========================== logs ===========================\nwaiting for locator('xpath=//input[@data-id=\\'0\\']')\n============================================================\n\n\u001b[2m    at c:\\Users\\asus\\OneDrive\\Рабочий стол\\New folder (c:\\Users\\asus\\OneDrive\\Рабочий стол\\New folder (3)\\3)\\tests\\resetPassword.test.js:41:10)\u001b[22m\n\u001b[2m    at c:\\Users\\asus\\OneDrive\\Рабочий стол\\New folder (c:\\Users\\asus\\OneDrive\\Рабочий стол\\New folder (3)\\3)\\node_modules\\@playwright\\test\\lib\\worker\\workerMain.js:351:9)\u001b[22m\n\u001b[2m    at c:\\Users\\asus\\OneDrive\\Рабочий стол\\New folder (c:\\Users\\asus\\OneDrive\\Рабочий стол\\New folder (3)\\3)\\node_modules\\@playwright\\test\\lib\\worker\\workerMain.js:347:7)\u001b[22m"
-                    },
-                    {
-                      "message": "Pending operations:\n  - page.fill at 3)\\tests\\resetPassword.test.js:41:10\n  - page.click at pages\\pom.page.js:117:21\n"
-                    }
-                  ],
+                  "status": "passed",
+                  "duration": 6915,
+                  "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-05-24T17:48:39.509Z",
+                  "startTime": "2023-05-26T03:10:35.028Z",
                   "attachments": []
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
-          "id": "e791e482de1a5095b49b-db120778ec902d2922ac",
-          "file": "tests/resetPassword.test.js",
-          "line": 25,
+          "id": "94416ff326c6cac9157c-1bff8bfece651eba213a",
+          "file": "tests/login.test.js",
+          "line": 7,
           "column": 5
         }
       ]
